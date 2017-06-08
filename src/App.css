@@ -1,0 +1,46 @@
+.drop-outer {
+    height: 280px;
+    /*overflow: hidden;*/
+}
+
+.back {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 280px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.back-1, .back-2 {
+    /*height: 100px;
+    width: 100px;*/
+    position: absolute;
+    margin: auto;
+    border-radius: 50%;
+}
+.back-1 {
+    background: #ec0000;
+}
+.back-2 {
+    /*height: 80px;
+    width: 80px;*/
+    top: 10px;
+    left: 10px;
+    background: #ec5300;
+}
+
+.drop {
+    background: steelblue;
+    height: 20px;
+    width: 20px;
+    position: relative;
+    margin: auto;
+    display: block;
+    border-radius: 50%;
+    /*animation: drop 0.85s cubic-bezier(0.55, 0.085, 0.68, 0.53) 1 forwards;*/
+}
+
+@keyframes drop {
+    0% { transform: translateY(0px) }
+    100% { transform: translateY(300px) }
+}
